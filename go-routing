@@ -1,0 +1,112 @@
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+type house struct {
+	norooms int
+	price   int
+	city    []string
+}
+
+func main() {
+	/*
+						fmt.Print("enter your name: ")
+						a := bufio.NewReader(os.Stdin)
+						urname, _ := a.ReadString('\n')
+
+						b := bufio.NewReader(os.Stdin)
+						fmt.Print("give us your rating:")
+						urrating, _ := b.ReadString('\n')
+						urr, _ := strconv.ParseFloat(strings.TrimSpace(urrating), 64)
+						fmt.Print("your name is ", urname)
+						fmt.Println("your rating is ", urr)
+
+						if urr == 5.0 {
+
+							fmt.Println("we are glad to make u happy")
+
+						} else if urr > 3 {
+							fmt.Println("we will keep improving, thank you")
+
+						} else if urr >= 0 {
+							fmt.Println("apologize from our side...we will make sure to work on it, thnak you")
+						}
+
+
+
+
+					a := bufio.NewReader(os.Stdin)
+					fmt.Println("enter your date of birth : ")
+					a1, _ := a.ReadString('\n')
+					a2, _ := strconv.ParseFloat(strings.TrimSpace(a1), 64)
+					a3 := bufio.NewReader(os.Stdin)
+					fmt.Println("enter your age : ")
+					a4, _ := a3.ReadString('\n')
+					a5, _ := strconv.ParseFloat(strings.TrimSpace(a4), 64)
+					currentyr := 2022
+					b := currentyr - int(a5)
+					fmt.Println("the date and year of your birth is ", a2, "-", b)
+
+
+
+
+
+				a := 50
+				b := 10000
+				c := []string{"mumbai", "kolhapur", "pune", "satara"}
+
+				d := house{a, b, c}
+
+				a = 51
+
+				fmt.Println(d)
+
+
+
+
+
+			a := make(map[string]string)
+
+			for i := 0; i <= 10; i++ {
+				b := bufio.NewReader(os.Stdin)
+				fmt.Println("enter student name :")
+				d, _ := b.ReadString('\n')
+				c := bufio.NewReader(os.Stdin)
+				fmt.Println("enter student roll number : ")
+				e, _ := c.ReadString('\n')
+				a[d] = e
+
+			}
+
+			fmt.Print(a)
+
+
+
+
+
+
+		randomnumber, _ := rand.Int(rand.Reader, big.NewInt(6))
+
+		rolldice := randomnumber
+
+		if rolldice == big.NewInt(0) {
+
+			rolldice = big.NewInt(1)
+
+		} else {
+
+			fmt.Println(rolldice)
+		}
+
+
+	*/
+
+	x1 := rand.NewSource(time.Now().UnixNano())
+	y1 := rand.New(x1)
+	fmt.Println(y1.Intn(6))
+
+}
